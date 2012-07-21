@@ -1,0 +1,9 @@
+   class Split(String string, Character char=`:`) : #{first:string,rest:string} {
+        val index = string.firstCharacterOccurrence(char)
+        first=string[0..index-1]
+	    rest=string[index+1..]
+    }
+
+    val split = Split(string);
+    print(split.first);
+    print(split.rest
